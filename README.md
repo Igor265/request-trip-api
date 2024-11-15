@@ -21,6 +21,19 @@
     ./vendor/bin/sail artisan db:seed
     ```
 
+5. Abra o arquivo `.env` e substitua os valores pelos detalhes do seu provedor:
+
+    ```env
+    MAIL_MAILER=smtp
+    MAIL_HOST=smtp.mailtrap.io
+    MAIL_PORT=2525
+    MAIL_USERNAME=seu_usuario
+    MAIL_PASSWORD=sua_senha
+    MAIL_ENCRYPTION=tls
+    MAIL_FROM_ADDRESS=exemplo@seu-dominio.com
+    MAIL_FROM_NAME="${APP_NAME}"
+    ```
+
 ## Executar os Testes
 
 1. Para executar os testes, use o seguinte comando:
