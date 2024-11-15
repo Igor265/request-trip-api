@@ -6,7 +6,6 @@ use App\Http\Requests\LoginRequest;
 use App\Http\Requests\RegisterRequest;
 use App\Http\Resources\DefaultResource;
 use App\Models\User;
-use Illuminate\Http\Request;
 
 class AuthController extends Controller
 {
@@ -37,7 +36,7 @@ class AuthController extends Controller
     {
         auth()->user()->tokens()->delete();
         return response()->json([
-            'message' => 'Deslogado com sucesso.'
+            'message' => 'Logout realizado com sucesso.'
         ]);
     }
 }

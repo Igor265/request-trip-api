@@ -43,7 +43,7 @@ class OrderTripController extends Controller
 
         return response()->json([
             'message' => 'Viagem solicitada com sucesso.',
-            'data' => $orderTrip
+            'data' => new TravelRequestResource($orderTrip)
         ], 201);
     }
 
