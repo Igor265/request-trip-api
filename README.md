@@ -154,7 +154,7 @@
 #### Listar Pedidos de Viagem
 - **URL:** `/api/request-trip`
 - **Método:** `GET`
-- **Descrição:** Lista todos os pedidos de viagem do usuário autenticado.
+- **Descrição:** Lista todos os pedidos de viagem.
 - **Cabeçalho:** `Authorization: Bearer {token}`, `Accept: application/json`
 - **Parâmetros de Consulta (Query Parameters):**
     - `status`: Filtra os pedidos de viagem pelo status (ex: `solicitado`, `aprovado`, `cancelado`).
