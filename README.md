@@ -50,7 +50,7 @@
 ### Autenticação
 
 #### Registrar Usuário
-- **URL:** `/register`
+- **URL:** `/api/register`
 - **Método:** `POST`
 - **Descrição:** Registra um novo usuário.
 - **Cabeçalho:** `Accept: application/json`
@@ -79,7 +79,7 @@
     ```
 
 #### Login
-- **URL:** `/login`
+- **URL:** `/api/login`
 - **Método:** `POST`
 - **Descrição:** Autentica um usuário.
 - **Cabeçalho:** `Accept: application/json`
@@ -107,7 +107,7 @@
     ```
 
 #### Logout
-- **URL:** `/logout`
+- **URL:** `/api/logout`
 - **Método:** `POST`
 - **Descrição:** Encerra a sessão do usuário autenticado.
 - **Cabeçalho:** `Authorization: Bearer {token}`, `Accept: application/json`
@@ -121,7 +121,7 @@
 ### Pedido de Viagem
 
 #### Criar Pedido de Viagem
-- **URL:** `/request-trip`
+- **URL:** `/api/request-trip`
 - **Método:** `POST`
 - **Descrição:** Cria um novo pedido de viagem.
 - **Cabeçalho:** `Authorization: Bearer {token}`, `Accept: application/json`
@@ -152,7 +152,7 @@
     ```
 
 #### Listar Pedidos de Viagem
-- **URL:** `/request-trip`
+- **URL:** `/api/request-trip`
 - **Método:** `GET`
 - **Descrição:** Lista todos os pedidos de viagem do usuário autenticado.
 - **Cabeçalho:** `Authorization: Bearer {token}`, `Accept: application/json`
@@ -180,7 +180,7 @@
     ```
 
 #### Obter Detalhes do Pedido de Viagem
-- **URL:** `/request-trip/{id}`
+- **URL:** `/api/request-trip/{id}`
 - **Método:** `GET`
 - **Descrição:** Retorna os detalhes de um pedido de viagem específico.
 - **Cabeçalho:** `Authorization: Bearer {token}`, `Accept: application/json`
@@ -199,7 +199,7 @@
   ```
 
 #### Atualizar Status do Pedido de Viagem
-- **URL:** `/request-trip/{id}/status`
+- **URL:** `/api/request-trip/{id}/status`
 - **Método:** `PUT`
 - **Descrição:** Atualiza o status de um pedido de viagem.
 - **Cabeçalho:** `Authorization: Bearer {token}`, `Accept: application/json`
